@@ -21,7 +21,7 @@ public class ControladorInventario {
                 case 1:
                     Producto nuevo = vista.pedirDatosUsuario();
                     baseDatos.agregarProducto(nuevo);
-                    vista.mostrarMensaje("✅ Producto agregado correctamente.");
+                    vista.mostrarMensaje("Producto agregado correctamente.");
                     break;
                 case 2:
                     String skuBuscar = vista.pedirSku();
@@ -35,13 +35,13 @@ public class ControladorInventario {
                     String skuEliminar = vista.pedirSku();
                     boolean eliminado = baseDatos.eliminarProducto(skuEliminar);
                     if (eliminado) {
-                        vista.mostrarMensaje("🗑️ Producto eliminado correctamente.");
+                        vista.mostrarMensaje("Producto eliminado correctamente.");
                     } else {
-                        vista.mostrarMensaje("❌ No se encontró el producto.");
+                        vista.mostrarMensaje("No se encontró el producto.");
                     }
                     break;
                 case 5:
-                    vista.mostrarMensaje("👋 Saliendo del sistema...");
+                    vista.mostrarMensaje("Saliendo del sistema...");
                     salir = true;
                     break;
                 default:

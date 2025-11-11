@@ -5,7 +5,7 @@ import java.util.Scanner;
 import modelo.Producto;
 
 public class InventarioVista {
-    private Scanner sc = new Scanner(System.in);
+    Scanner sc = new Scanner(System.in);
 
     public int mostrarMenu() {
         System.out.println("\n===== MENÚ INVENTARIO =====");
